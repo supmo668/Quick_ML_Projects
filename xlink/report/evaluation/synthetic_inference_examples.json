@@ -1,0 +1,84 @@
+{
+  "description": "Customer churn prediction inference examples",
+  "format": "Raw customer features that will be processed by the API",
+  "examples": [
+    {
+      "name": "high_risk_customer",
+      "description": "Month-to-month Fiber customer with electronic check payment",
+      "features": {
+        "gender": "Male",
+        "seniorcitizen": 0,
+        "partner": "Yes",
+        "dependents": "No",
+        "months_with_provider": 12,
+        "phone_service": "Yes",
+        "extra_lines": "No",
+        "internet_plan": "Fiber optic",
+        "addon_security": "No",
+        "addon_backup": "Yes",
+        "addon_device_protect": "No",
+        "addon_techsupport": "No",
+        "stream_tv": "No",
+        "stream_movies": "No",
+        "contract_type": "Month-to-month",
+        "paperless_billing": "Yes",
+        "payment_method": "Electronic check",
+        "monthly_fee": 85.25,
+        "lifetime_spend": 1023.00
+      },
+      "expected_risk": "high"
+    },
+    {
+      "name": "low_risk_customer", 
+      "description": "Long-term DSL customer with automatic payments",
+      "features": {
+        "gender": "Female",
+        "seniorcitizen": 1,
+        "partner": "Yes",
+        "dependents": "Yes",
+        "months_with_provider": 48,
+        "phone_service": "Yes",
+        "extra_lines": "Yes",
+        "internet_plan": "DSL",
+        "addon_security": "Yes",
+        "addon_backup": "Yes",
+        "addon_device_protect": "Yes",
+        "addon_techsupport": "Yes",
+        "stream_tv": "Yes",
+        "stream_movies": "Yes",
+        "contract_type": "Two year",
+        "paperless_billing": "No",
+        "payment_method": "Bank transfer (automatic)",
+        "monthly_fee": 95.50,
+        "lifetime_spend": 4584.00
+      },
+      "expected_risk": "low"
+    },
+    {
+      "name": "medium_risk_customer",
+      "description": "One-year contract customer with mixed services",
+      "features": {
+        "gender": "Male",
+        "seniorcitizen": 0,
+        "partner": "No",
+        "dependents": "No", 
+        "months_with_provider": 24,
+        "phone_service": "Yes",
+        "extra_lines": "No",
+        "internet_plan": "Fiber optic",
+        "addon_security": "No",
+        "addon_backup": "No",
+        "addon_device_protect": "Yes",
+        "addon_techsupport": "No",
+        "stream_tv": "Yes",
+        "stream_movies": "No",
+        "contract_type": "One year",
+        "paperless_billing": "Yes",
+        "payment_method": "Credit card (automatic)",
+        "monthly_fee": 75.20,
+        "lifetime_spend": 1804.80
+      },
+      "expected_risk": "medium"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "description": "Real customer inference examples from actual data",
+  "format": "Features extracted directly from customer_churn.csv",
+  "examples": [
+    {
+      "name": "high_risk_customer",
+      "description": "Month-to-month customer with electronic check payment (actual churned customer)",
+      "features": {
+        "gender": "Female",
+        "seniorcitizen": 0,
+        "partner": "No",
+        "dependents": "No",
+        "months_with_provider": 2.0,
+        "phone_service": "Yes",
+        "extra_lines": "No",
+        "internet_plan": "Fiber optic",
+        "addon_security": "No",
+        "addon_backup": "No",
+        "addon_device_protect": "No",
+        "addon_techsupport": "No",
+        "stream_tv": "No",
+        "stream_movies": "No",
+        "contract_type": "Month-to-month",
+        "paperless_billing": "Yes",
+        "payment_method": "Electronic check",
+        "monthly_fee": 70.7,
+        "lifetime_spend": 151.65,
+        "marketing_opt_in": 1
+      },
+      "expected_churn": true,
+      "actual_churned": true
+    },
+    {
+      "name": "low_risk_customer",
+      "description": "Long-term customer with automatic payment (actual retained customer)",
+      "features": {
+        "gender": "Male",
+        "seniorcitizen": 0,
+        "partner": "No",
+        "dependents": "Yes",
+        "months_with_provider": 62.0,
+        "phone_service": "Yes",
+        "extra_lines": "No",
+        "internet_plan": "DSL",
+        "addon_security": "Yes",
+        "addon_backup": "Yes",
+        "addon_device_protect": "No",
+        "addon_techsupport": "No",
+        "stream_tv": "No",
+        "stream_movies": "No",
+        "contract_type": "One year",
+        "paperless_billing": "No",
+        "payment_method": "Bank transfer (automatic)",
+        "monthly_fee": 56.15,
+        "lifetime_spend": 3487.95,
+        "marketing_opt_in": 0
+      },
+      "expected_churn": false,
+      "actual_churned": false
+    },
+    {
+      "name": "medium_risk_customer",
+      "description": "One-year contract customer (actual customer)",
+      "features": {
+        "gender": "Male",
+        "seniorcitizen": 0,
+        "partner": "No",
+        "dependents": "No",
+        "months_with_provider": 34.0,
+        "phone_service": "Yes",
+        "extra_lines": "No",
+        "internet_plan": "DSL",
+        "addon_security": "Yes",
+        "addon_backup": "No",
+        "addon_device_protect": "Yes",
+        "addon_techsupport": "No",
+        "stream_tv": "No",
+        "stream_movies": "No",
+        "contract_type": "One year",
+        "paperless_billing": "No",
+        "payment_method": "Mailed check",
+        "monthly_fee": 56.95,
+        "lifetime_spend": 1889.5,
+        "marketing_opt_in": 0
+      },
+      "expected_churn": null,
+      "actual_churned": false
+    }
+  ]
+}

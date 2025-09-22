@@ -1,0 +1,673 @@
+{
+  "timestamp": "2025-09-20T23:46:26.309664",
+  "dataset_info": {
+    "total_rows": 7148,
+    "total_columns": 23,
+    "memory_usage_mb": 7.6753740310668945,
+    "columns": [
+      "account_id",
+      "gender",
+      "seniorcitizen",
+      "partner",
+      "dependents",
+      "months_with_provider",
+      "phone_service",
+      "extra_lines",
+      "internet_plan",
+      "addon_security",
+      "addon_backup",
+      "addon_device_protect",
+      "addon_techsupport",
+      "stream_tv",
+      "stream_movies",
+      "contract_type",
+      "paperless_billing",
+      "payment_method",
+      "monthly_fee",
+      "lifetime_spend",
+      "churned",
+      "customer_hash",
+      "marketing_opt_in"
+    ]
+  },
+  "column_types": {
+    "numerical": [
+      "seniorcitizen",
+      "months_with_provider",
+      "monthly_fee",
+      "lifetime_spend",
+      "churned",
+      "marketing_opt_in"
+    ],
+    "categorical": [
+      "account_id",
+      "gender",
+      "partner",
+      "dependents",
+      "phone_service",
+      "extra_lines",
+      "internet_plan",
+      "addon_security",
+      "addon_backup",
+      "addon_device_protect",
+      "addon_techsupport",
+      "stream_tv",
+      "stream_movies",
+      "contract_type",
+      "paperless_billing",
+      "payment_method",
+      "customer_hash"
+    ],
+    "binary": [
+      "gender",
+      "seniorcitizen",
+      "partner",
+      "dependents",
+      "phone_service",
+      "paperless_billing",
+      "churned",
+      "marketing_opt_in"
+    ],
+    "dtype_distribution": {
+      "object": 17,
+      "int64": 3,
+      "float64": 3
+    }
+  },
+  "missing_values": {
+    "total_missing": 1937,
+    "columns_with_missing": {
+      "months_with_provider": 356,
+      "payment_method": 714,
+      "lifetime_spend": 867
+    },
+    "missing_percentage": {
+      "months_with_provider": 4.98041410184667,
+      "payment_method": 9.988808058198098,
+      "lifetime_spend": 12.129266927811976
+    }
+  },
+  "numerical_stats": {
+    "seniorcitizen": {
+      "count": 7148,
+      "mean": 0.16200335758254056,
+      "std": 0.3684796668136555,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0,
+      "skewness": 1.8350604948057594,
+      "kurtosis": 1.367829658061757,
+      "outliers_iqr": {
+        "count": 1158,
+        "percentage": 16.200335758254056
+      }
+    },
+    "months_with_provider": {
+      "count": 6792,
+      "mean": 32.30565371024735,
+      "std": 24.52802142272165,
+      "min": 0.0,
+      "25%": 9.0,
+      "50%": 29.0,
+      "75%": 55.0,
+      "max": 72.0,
+      "skewness": 0.24475549177302022,
+      "kurtosis": -1.3845712963794763,
+      "outliers_iqr": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    },
+    "monthly_fee": {
+      "count": 7148,
+      "mean": 65.94708348732426,
+      "std": 35.19412876765804,
+      "min": 8.738970259748356,
+      "25%": 35.4375,
+      "50%": 70.35,
+      "75%": 90.0,
+      "max": 417.9591572961415,
+      "skewness": 1.756061911766517,
+      "kurtosis": 13.31349269842578,
+      "outliers_iqr": {
+        "count": 46,
+        "percentage": 0.6435366536094013
+      }
+    },
+    "lifetime_spend": {
+      "count": 6281,
+      "mean": 2286.1644950376253,
+      "std": 2337.434382029884,
+      "min": 7.606104039735315,
+      "25%": 389.8,
+      "50%": 1396.0,
+      "75%": 3729.6,
+      "max": 21086.836264908212,
+      "skewness": 1.2669939697729187,
+      "kurtosis": 1.9340441406626834,
+      "outliers_iqr": {
+        "count": 21,
+        "percentage": 0.33434166533991405
+      }
+    },
+    "churned": {
+      "count": 7148,
+      "mean": 0.26580861779518744,
+      "std": 0.44179373272960565,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0,
+      "skewness": 1.0604809873820238,
+      "kurtosis": -0.875625152352657,
+      "outliers_iqr": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    },
+    "marketing_opt_in": {
+      "count": 7148,
+      "mean": 0.29630665920537214,
+      "std": 0.4566598266302975,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0,
+      "skewness": 0.8923506643864244,
+      "kurtosis": -1.2040472607522053,
+      "outliers_iqr": {
+        "count": 0,
+        "percentage": 0.0
+      }
+    }
+  },
+  "categorical_stats": {
+    "account_id": {
+      "unique_values": 7043,
+      "most_frequent": "0303-UNCIP",
+      "frequency_most_frequent": 2,
+      "distribution": {
+        "0303-UNCIP": 2,
+        "9658-WYUFB": 2,
+        "7623-TRNQN": 2,
+        "4029-HPFVY": 2,
+        "0774-IFUVM": 2,
+        "7718-RXDGG": 2,
+        "9553-DLCLU": 2,
+        "6689-KXGBO": 2,
+        "2538-OIMXF": 2,
+        "2041-JIJCI": 2
+      }
+    },
+    "gender": {
+      "unique_values": 2,
+      "most_frequent": "Male",
+      "frequency_most_frequent": 3606,
+      "distribution": {
+        "Male": 3606,
+        "Female": 3542
+      }
+    },
+    "partner": {
+      "unique_values": 2,
+      "most_frequent": "No",
+      "frequency_most_frequent": 3703,
+      "distribution": {
+        "No": 3703,
+        "Yes": 3445
+      }
+    },
+    "dependents": {
+      "unique_values": 2,
+      "most_frequent": "No",
+      "frequency_most_frequent": 5015,
+      "distribution": {
+        "No": 5015,
+        "Yes": 2133
+      }
+    },
+    "phone_service": {
+      "unique_values": 2,
+      "most_frequent": "Yes",
+      "frequency_most_frequent": 6453,
+      "distribution": {
+        "Yes": 6453,
+        "No": 695
+      }
+    },
+    "extra_lines": {
+      "unique_values": 3,
+      "most_frequent": "No",
+      "frequency_most_frequent": 3435,
+      "distribution": {
+        "No": 3435,
+        "Yes": 3018,
+        "No phone service": 695
+      }
+    },
+    "internet_plan": {
+      "unique_values": 9,
+      "most_frequent": "Fiber optic",
+      "frequency_most_frequent": 3129,
+      "distribution": {
+        "Fiber optic": 3129,
+        "DSL": 2469,
+        "No": 1543,
+        "Fiber optiic": 2,
+        "Fiber opttic": 1,
+        "iFber optic": 1,
+        "FFiber optic": 1,
+        "Fiiber optic": 1,
+        "Fibe optic": 1
+      }
+    },
+    "addon_security": {
+      "unique_values": 3,
+      "most_frequent": "No",
+      "frequency_most_frequent": 3556,
+      "distribution": {
+        "No": 3556,
+        "Yes": 2049,
+        "No internet service": 1543
+      }
+    },
+    "addon_backup": {
+      "unique_values": 3,
+      "most_frequent": "No",
+      "frequency_most_frequent": 3134,
+      "distribution": {
+        "No": 3134,
+        "Yes": 2471,
+        "No internet service": 1543
+      }
+    },
+    "addon_device_protect": {
+      "unique_values": 3,
+      "most_frequent": "No",
+      "frequency_most_frequent": 3155,
+      "distribution": {
+        "No": 3155,
+        "Yes": 2450,
+        "No internet service": 1543
+      }
+    },
+    "addon_techsupport": {
+      "unique_values": 3,
+      "most_frequent": "No",
+      "frequency_most_frequent": 3531,
+      "distribution": {
+        "No": 3531,
+        "Yes": 2074,
+        "No internet service": 1543
+      }
+    },
+    "stream_tv": {
+      "unique_values": 3,
+      "most_frequent": "No",
+      "frequency_most_frequent": 2860,
+      "distribution": {
+        "No": 2860,
+        "Yes": 2745,
+        "No internet service": 1543
+      }
+    },
+    "stream_movies": {
+      "unique_values": 3,
+      "most_frequent": "No",
+      "frequency_most_frequent": 2837,
+      "distribution": {
+        "No": 2837,
+        "Yes": 2768,
+        "No internet service": 1543
+      }
+    },
+    "contract_type": {
+      "unique_values": 3,
+      "most_frequent": "Month-to-month",
+      "frequency_most_frequent": 3931,
+      "distribution": {
+        "Month-to-month": 3931,
+        "Two year": 1718,
+        "One year": 1499
+      }
+    },
+    "paperless_billing": {
+      "unique_values": 2,
+      "most_frequent": "Yes",
+      "frequency_most_frequent": 4231,
+      "distribution": {
+        "Yes": 4231,
+        "No": 2917
+      }
+    },
+    "payment_method": {
+      "unique_values": 12,
+      "most_frequent": "Electronic check",
+      "frequency_most_frequent": 2146,
+      "distribution": {
+        "Electronic check": 2146,
+        "Mailed check": 1472,
+        "Bank transfer (automatic)": 1423,
+        "Credit card (automatic)": 1380,
+        "mailed check": 3,
+        "electronic check": 3,
+        "MAILED CHECK": 2,
+        "NAN": 1,
+        "ELECTRONIC CHECK": 1,
+        "bank transfer (automatic)": 1
+      }
+    },
+    "customer_hash": {
+      "unique_values": 7043,
+      "most_frequent": "d9b405ecce55",
+      "frequency_most_frequent": 2,
+      "distribution": {
+        "d9b405ecce55": 2,
+        "96e12cad02dd": 2,
+        "7cd7adceb68b": 2,
+        "617a34b31a06": 2,
+        "67db383c0de0": 2,
+        "4a266aa0bc61": 2,
+        "148e58e540e1": 2,
+        "c8ad3248c7f5": 2,
+        "e08260260c97": 2,
+        "d221d82989a2": 2
+      }
+    }
+  },
+  "correlations": {
+    "correlation_matrix": {
+      "seniorcitizen": {
+        "seniorcitizen": 1.0,
+        "months_with_provider": 0.0131786694429848,
+        "monthly_fee": 0.19067449870948305,
+        "lifetime_spend": 0.10877617991443936,
+        "churned": 0.150577966284614,
+        "marketing_opt_in": 0.008212777171657092
+      },
+      "months_with_provider": {
+        "seniorcitizen": 0.0131786694429848,
+        "months_with_provider": 1.0,
+        "monthly_fee": 0.2191019772854059,
+        "lifetime_spend": 0.8000260923469068,
+        "churned": -0.3526965689408031,
+        "marketing_opt_in": -0.020948614530899058
+      },
+      "monthly_fee": {
+        "seniorcitizen": 0.19067449870948305,
+        "months_with_provider": 0.2191019772854059,
+        "monthly_fee": 1.0,
+        "lifetime_spend": 0.5490309983728134,
+        "churned": 0.16285863392516675,
+        "marketing_opt_in": -0.013761117483126292
+      },
+      "lifetime_spend": {
+        "seniorcitizen": 0.10877617991443936,
+        "months_with_provider": 0.8000260923469068,
+        "monthly_fee": 0.5490309983728134,
+        "lifetime_spend": 1.0,
+        "churned": -0.19162804653289037,
+        "marketing_opt_in": -0.018597243155412675
+      },
+      "churned": {
+        "seniorcitizen": 0.150577966284614,
+        "months_with_provider": -0.3526965689408031,
+        "monthly_fee": 0.16285863392516675,
+        "lifetime_spend": -0.19162804653289037,
+        "churned": 1.0,
+        "marketing_opt_in": 0.009721419852279003
+      },
+      "marketing_opt_in": {
+        "seniorcitizen": 0.008212777171657092,
+        "months_with_provider": -0.020948614530899058,
+        "monthly_fee": -0.013761117483126292,
+        "lifetime_spend": -0.018597243155412675,
+        "churned": 0.009721419852279003,
+        "marketing_opt_in": 1.0
+      }
+    },
+    "strong_correlations": [
+      {
+        "var1": "months_with_provider",
+        "var2": "lifetime_spend",
+        "correlation": 0.8000260923469068
+      },
+      {
+        "var1": "monthly_fee",
+        "var2": "lifetime_spend",
+        "correlation": 0.5490309983728134
+      }
+    ]
+  },
+  "churn_analysis": {
+    "overall_churn_rate": 0.26580861779518744,
+    "churned_count": 1900,
+    "retained_count": 5248,
+    "churn_by_features": {
+      "gender": {
+        "mean": {
+          "Female": 0.269339356295878,
+          "Male": 0.26234054353854686
+        },
+        "count": {
+          "Female": 3542,
+          "Male": 3606
+        }
+      },
+      "seniorcitizen": {
+        "mean": {
+          "0": 0.2365609348914858,
+          "1": 0.4170984455958549
+        },
+        "count": {
+          "0": 5990,
+          "1": 1158
+        }
+      },
+      "partner": {
+        "mean": {
+          "No": 0.3300027005130975,
+          "Yes": 0.19680696661828737
+        },
+        "count": {
+          "No": 3703,
+          "Yes": 3445
+        }
+      },
+      "dependents": {
+        "mean": {
+          "No": 0.3134596211365902,
+          "Yes": 0.1537740271917487
+        },
+        "count": {
+          "No": 5015,
+          "Yes": 2133
+        }
+      },
+      "phone_service": {
+        "mean": {
+          "No": 0.2503597122302158,
+          "Yes": 0.267472493413916
+        },
+        "count": {
+          "No": 695,
+          "Yes": 6453
+        }
+      },
+      "extra_lines": {
+        "mean": {
+          "No": 0.251528384279476,
+          "No phone service": 0.2503597122302158,
+          "Yes": 0.28561961563949634
+        },
+        "count": {
+          "No": 3435,
+          "No phone service": 695,
+          "Yes": 3018
+        }
+      },
+      "internet_plan": {
+        "mean": {
+          "DSL": 0.19036046982584043,
+          "FFiber optic": 0.0,
+          "Fibe optic": 1.0,
+          "Fiber optic": 0.41962288271013104,
+          "Fiber optiic": 0.5,
+          "Fiber opttic": 0.0,
+          "Fiiber optic": 0.0,
+          "No": 0.07453013609850939,
+          "iFber optic": 0.0
+        },
+        "count": {
+          "DSL": 2469,
+          "FFiber optic": 1,
+          "Fibe optic": 1,
+          "Fiber optic": 3129,
+          "Fiber optiic": 2,
+          "Fiber opttic": 1,
+          "Fiiber optic": 1,
+          "No": 1543,
+          "iFber optic": 1
+        }
+      },
+      "addon_security": {
+        "mean": {
+          "No": 0.4176040494938133,
+          "No internet service": 0.07453013609850939,
+          "Yes": 0.14641288433382138
+        },
+        "count": {
+          "No": 3556,
+          "No internet service": 1543,
+          "Yes": 2049
+        }
+      },
+      "addon_backup": {
+        "mean": {
+          "No": 0.3991703892788768,
+          "No internet service": 0.07453013609850939,
+          "Yes": 0.2161068393363011
+        },
+        "count": {
+          "No": 3134,
+          "No internet service": 1543,
+          "Yes": 2471
+        }
+      },
+      "addon_device_protect": {
+        "mean": {
+          "No": 0.3920760697305864,
+          "No internet service": 0.07453013609850939,
+          "Yes": 0.2236734693877551
+        },
+        "count": {
+          "No": 3155,
+          "No internet service": 1543,
+          "Yes": 2450
+        }
+      },
+      "addon_techsupport": {
+        "mean": {
+          "No": 0.41659586519399605,
+          "No internet service": 0.07453013609850939,
+          "Yes": 0.15139826422372227
+        },
+        "count": {
+          "No": 3531,
+          "No internet service": 1543,
+          "Yes": 2074
+        }
+      },
+      "stream_tv": {
+        "mean": {
+          "No": 0.33426573426573425,
+          "No internet service": 0.07453013609850939,
+          "Yes": 0.3020036429872495
+        },
+        "count": {
+          "No": 2860,
+          "No internet service": 1543,
+          "Yes": 2745
+        }
+      },
+      "stream_movies": {
+        "mean": {
+          "No": 0.3376806485724357,
+          "No internet service": 0.07453013609850939,
+          "Yes": 0.29877167630057805
+        },
+        "count": {
+          "No": 2837,
+          "No internet service": 1543,
+          "Yes": 2768
+        }
+      },
+      "contract_type": {
+        "mean": {
+          "Month-to-month": 0.4286441109132536,
+          "One year": 0.11074049366244162,
+          "Two year": 0.02852153667054715
+        },
+        "count": {
+          "Month-to-month": 3931,
+          "One year": 1499,
+          "Two year": 1718
+        }
+      },
+      "paperless_billing": {
+        "mean": {
+          "No": 0.1655810764484059,
+          "Yes": 0.3349090049633656
+        },
+        "count": {
+          "No": 2917,
+          "Yes": 4231
+        }
+      },
+      "payment_method": {
+        "mean": {
+          "BANK TRANSFER (AUTOMATIC)": 0.0,
+          "Bank transfer (automatic)": 0.16725228390723823,
+          "Credit card (automatic)": 0.15,
+          "ELECTRONIC CHECK": 0.0,
+          "Electronic check": 0.44920782851817337,
+          "MAILED CHECK": 1.0,
+          "Mailed check": 0.19021739130434784,
+          "NAN": 0.0,
+          "bank transfer (automatic)": 1.0,
+          "credit card (automatic)": 0.0,
+          "electronic check": 0.3333333333333333,
+          "mailed check": 0.3333333333333333
+        },
+        "count": {
+          "BANK TRANSFER (AUTOMATIC)": 1,
+          "Bank transfer (automatic)": 1423,
+          "Credit card (automatic)": 1380,
+          "ELECTRONIC CHECK": 1,
+          "Electronic check": 2146,
+          "MAILED CHECK": 2,
+          "Mailed check": 1472,
+          "NAN": 1,
+          "bank transfer (automatic)": 1,
+          "credit card (automatic)": 1,
+          "electronic check": 3,
+          "mailed check": 3
+        }
+      },
+      "marketing_opt_in": {
+        "mean": {
+          "0": 0.26302186878727635,
+          "1": 0.2724268177525968
+        },
+        "count": {
+          "0": 5030,
+          "1": 2118
+        }
+      }
+    }
+  }
+}

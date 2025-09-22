@@ -206,8 +206,21 @@ async def predict_churn(request: PredictionRequest):
         df = processor.engineer_features(df)
         df = processor.encode_features(df, fit=False)
         
-        # Ensure all expected columns are present
-        # (In production, you'd load the training columns from metadata)
+        # Load training data to get correct column structure
+        try:
+            training_data = processor.load_latest()
+            training_columns = training_data.columns.drop('churned').tolist()
+            
+            # Add missing columns with default values
+            for col in training_columns:
+                if col not in df.columns:
+                    df[col] = 0
+            
+            # Reorder columns to match training
+            df = df.reindex(columns=training_columns, fill_value=0)
+            
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Could not align features with training data: {str(e)}")
         
         # Scale features
         X_scaled = scaler.transform(df)
