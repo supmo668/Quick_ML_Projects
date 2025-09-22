@@ -9,3 +9,22 @@ models/
 *.pkl
 
 .env
+
+# Virtual environment
+.venv/
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+
+# Generated results (exclude from repo)
+results/
+data/processed/
+
+# uv lock file (can be included, but excluding for now)
+uv.lock
