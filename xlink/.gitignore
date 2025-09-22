@@ -1,7 +1,11 @@
-# TASK.md
-
+# custom
+TASK.md
+Instructions.pdf
+PLAN.md
+RATIONALE.md
+# models and data
 models/
 *.csv
 *.pkl
-Instructions.pdf
+
 .env
