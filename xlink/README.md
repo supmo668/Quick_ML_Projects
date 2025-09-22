@@ -73,29 +73,7 @@ pytest tests/api/ -v     # API tests only
 pytest tests/pipeline/ -v
 ```
 
-## 🔧 Development Workflow
 
-### Local Development
-```bash
-uv sync --extra dev --extra test && source .venv/bin/activate
-./scripts/run_dev.sh
-# Optional: black pipeline/ api/ tests/ && pylint pipeline/ api/
-```
-
-### Development Environment Variables
-
-The project supports these environment variables:
-- `PYTHONPATH`: Automatically set to project root
-- `BUILD_ENV`: Set to "development" or "production" 
-- `LOG_LEVEL`: Set logging level (DEBUG, INFO, WARNING, ERROR)
-
-### Project Configuration
-
-Key configuration files:
-- `pyproject.toml`: Dependencies, project metadata, and tool configurations
-- `pytest.ini`: Test configuration and options
-- `.gitignore`: Git ignore patterns
-- `Dockerfile`: Production container configuration
 
 ## 📊 API Endpoints
 
@@ -105,12 +83,7 @@ Interactive docs when running:
 - Swagger UI: http://localhost:8000/docs
 - ReDoc: http://localhost:8000/redoc
 
-## 🐳 Docker Deployment Guide
 
-### Docker Health Checks
-```bash
-docker inspect --format='{{.State.Health.Status}}' churn-api
-```
 
 ## 📈 Model Performance
 
@@ -138,27 +111,11 @@ For a consolidated, academically written account of the methodology and results,
 
 These documents elaborate the full workflow (EDA → feature engineering → modeling → evaluation), interpret results, discuss modeling risks and trade-offs, and outline deployment/monitoring plans in alignment with `TASK.md`.
 
-## 🔧 Development
 
-Environment variables: `PYTHONPATH` (project root), `BUILD_ENV` (development|production)
 
-## 🐳 Docker
+## � Documentation
 
-Build: `docker build -t churn-prediction-api .`  Run: `docker run -d -p 8000:8000 --name churn-api churn-prediction-api`
-
-## 🚨 Troubleshooting (concise)
-If the API fails to start, ensure the venv is active, port 8000 is free, and dependencies are installed. Rebuild Docker without cache if builds fail.
-
-### Getting Help
-
-- Check the interactive API documentation: http://localhost:8000/docs
-- Review the RATIONALE.md for architectural decisions
-- Check DOCKER_TEST_SUMMARY.md for Docker testing examples
-- Examine the data-exploration/ directory for data requirements
-
-## 📚 Documentation
-
-Curated materials are in `report/`. Additional developer docs are in source folders.
+Curated materials are in `report/`. Interactive API docs at http://localhost:8000/docs when running.
 
 ## 🎯 Key Features
 

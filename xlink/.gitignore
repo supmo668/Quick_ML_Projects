@@ -28,5 +28,5 @@ uv.lock
 # Markdown: ignore all .md files except the root README.md
 *.md
 **/*.md
-!/README.md
-!/reports/README.md
+!README.md
+!/report/REPORT.md
