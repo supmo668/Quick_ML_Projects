@@ -28,3 +28,9 @@ data/processed/
 
 # uv lock file (can be included, but excluding for now)
 uv.lock
+
+# Markdown: ignore all .md files except the root README.md
+*.md
+**/*.md
+!/README.md
+!/reports/README.md
