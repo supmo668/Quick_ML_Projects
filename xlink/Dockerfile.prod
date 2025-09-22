@@ -1,0 +1,68 @@
+# Multi-stage Dockerfile for FastAPI Customer Churn Prediction API
+
+# Build stage
+FROM python:3.9-slim as builder
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install uv for fast Python package management
+RUN pip install --no-cache-dir uv
+
+# Set working directory
+WORKDIR /app
+
+# Copy dependency files
+COPY pyproject.toml ./
+
+# Create virtual environment and install dependencies
+RUN uv venv .venv && \
+    . .venv/bin/activate && \
+    uv pip install -e .
+
+# Production stage
+FROM python:3.9-slim as production
+
+# Install system dependencies for ML libraries
+RUN apt-get update && apt-get install -y \
+    libgomp1 \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create non-root user
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+# Set working directory
+WORKDIR /app
+
+# Copy virtual environment from builder stage
+COPY --from=builder /app/.venv /app/.venv
+
+# Make sure to use venv
+ENV PATH="/app/.venv/bin:$PATH"
+
+# Copy application code
+COPY pipeline/ ./pipeline/
+COPY api/ ./api/
+COPY data/ ./data/
+
+# Create necessary directories with proper permissions
+RUN mkdir -p models results data/processed && \
+    chown -R appuser:appuser /app
+
+# Switch to non-root user
+USER appuser
+
+# Expose port
+EXPOSE 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+# Run the application
+CMD ["uvicorn", "api.app:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]

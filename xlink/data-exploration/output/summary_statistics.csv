@@ -1,0 +1,245 @@
+Section,Metric,Value,Details
+Dataset Info,Total Rows,7148,
+Dataset Info,Total Columns,23,
+Dataset Info,Memory Usage (MB),7.68,
+,,,
+Column Types,Numerical Columns,6,"['seniorcitizen', 'months_with_provider', 'monthly_fee', 'lifetime_spend', 'churned', 'marketing_opt_in']"
+Column Types,Categorical Columns,17,"['account_id', 'gender', 'partner', 'dependents', 'phone_service', 'extra_lines', 'internet_plan', 'addon_security', 'addon_backup', 'addon_device_protect', 'addon_techsupport', 'stream_tv', 'stream_movies', 'contract_type', 'paperless_billing', 'payment_method', 'customer_hash']"
+Column Types,Binary Columns,8,"['gender', 'seniorcitizen', 'partner', 'dependents', 'phone_service', 'paperless_billing', 'churned', 'marketing_opt_in']"
+,,,
+Missing Values,Total Missing,1937,
+Missing Values,months_with_provider,356,4.98%
+Missing Values,payment_method,714,9.99%
+Missing Values,lifetime_spend,867,12.13%
+,,,
+Numerical Stats,Column,Statistic,Value
+Numerical Stats,seniorcitizen,Count,7148
+Numerical Stats,seniorcitizen,Mean,0.1620
+Numerical Stats,seniorcitizen,Std,0.3685
+Numerical Stats,seniorcitizen,Min,0.0000
+Numerical Stats,seniorcitizen,Q1 (25%),0.0000
+Numerical Stats,seniorcitizen,Median (50%),0.0000
+Numerical Stats,seniorcitizen,Q3 (75%),0.0000
+Numerical Stats,seniorcitizen,Max,1.0000
+Numerical Stats,seniorcitizen,Skewness,1.8351
+Numerical Stats,seniorcitizen,Kurtosis,1.3678
+Numerical Stats,seniorcitizen,Outliers (%),16.20%
+,,,
+Numerical Stats,months_with_provider,Count,6792
+Numerical Stats,months_with_provider,Mean,32.3057
+Numerical Stats,months_with_provider,Std,24.5280
+Numerical Stats,months_with_provider,Min,0.0000
+Numerical Stats,months_with_provider,Q1 (25%),9.0000
+Numerical Stats,months_with_provider,Median (50%),29.0000
+Numerical Stats,months_with_provider,Q3 (75%),55.0000
+Numerical Stats,months_with_provider,Max,72.0000
+Numerical Stats,months_with_provider,Skewness,0.2448
+Numerical Stats,months_with_provider,Kurtosis,-1.3846
+Numerical Stats,months_with_provider,Outliers (%),0.00%
+,,,
+Numerical Stats,monthly_fee,Count,7148
+Numerical Stats,monthly_fee,Mean,65.9471
+Numerical Stats,monthly_fee,Std,35.1941
+Numerical Stats,monthly_fee,Min,8.7390
+Numerical Stats,monthly_fee,Q1 (25%),35.4375
+Numerical Stats,monthly_fee,Median (50%),70.3500
+Numerical Stats,monthly_fee,Q3 (75%),90.0000
+Numerical Stats,monthly_fee,Max,417.9592
+Numerical Stats,monthly_fee,Skewness,1.7561
+Numerical Stats,monthly_fee,Kurtosis,13.3135
+Numerical Stats,monthly_fee,Outliers (%),0.64%
+,,,
+Numerical Stats,lifetime_spend,Count,6281
+Numerical Stats,lifetime_spend,Mean,2286.1645
+Numerical Stats,lifetime_spend,Std,2337.4344
+Numerical Stats,lifetime_spend,Min,7.6061
+Numerical Stats,lifetime_spend,Q1 (25%),389.8000
+Numerical Stats,lifetime_spend,Median (50%),1396.0000
+Numerical Stats,lifetime_spend,Q3 (75%),3729.6000
+Numerical Stats,lifetime_spend,Max,21086.8363
+Numerical Stats,lifetime_spend,Skewness,1.2670
+Numerical Stats,lifetime_spend,Kurtosis,1.9340
+Numerical Stats,lifetime_spend,Outliers (%),0.33%
+,,,
+Numerical Stats,churned,Count,7148
+Numerical Stats,churned,Mean,0.2658
+Numerical Stats,churned,Std,0.4418
+Numerical Stats,churned,Min,0.0000
+Numerical Stats,churned,Q1 (25%),0.0000
+Numerical Stats,churned,Median (50%),0.0000
+Numerical Stats,churned,Q3 (75%),1.0000
+Numerical Stats,churned,Max,1.0000
+Numerical Stats,churned,Skewness,1.0605
+Numerical Stats,churned,Kurtosis,-0.8756
+Numerical Stats,churned,Outliers (%),0.00%
+,,,
+Numerical Stats,marketing_opt_in,Count,7148
+Numerical Stats,marketing_opt_in,Mean,0.2963
+Numerical Stats,marketing_opt_in,Std,0.4567
+Numerical Stats,marketing_opt_in,Min,0.0000
+Numerical Stats,marketing_opt_in,Q1 (25%),0.0000
+Numerical Stats,marketing_opt_in,Median (50%),0.0000
+Numerical Stats,marketing_opt_in,Q3 (75%),1.0000
+Numerical Stats,marketing_opt_in,Max,1.0000
+Numerical Stats,marketing_opt_in,Skewness,0.8924
+Numerical Stats,marketing_opt_in,Kurtosis,-1.2040
+Numerical Stats,marketing_opt_in,Outliers (%),0.00%
+,,,
+Categorical Stats,Column,Metric,Value
+Categorical Stats,account_id,Unique Values,7043
+Categorical Stats,account_id,Most Frequent,0303-UNCIP
+Categorical Stats,account_id,Frequency of Most Frequent,2
+Categorical Stats,account_id,Category: 0303-UNCIP,2
+Categorical Stats,account_id,Category: 9658-WYUFB,2
+Categorical Stats,account_id,Category: 7623-TRNQN,2
+Categorical Stats,account_id,Category: 4029-HPFVY,2
+Categorical Stats,account_id,Category: 0774-IFUVM,2
+,,,
+Categorical Stats,gender,Unique Values,2
+Categorical Stats,gender,Most Frequent,Male
+Categorical Stats,gender,Frequency of Most Frequent,3606
+Categorical Stats,gender,Category: Male,3606
+Categorical Stats,gender,Category: Female,3542
+,,,
+Categorical Stats,partner,Unique Values,2
+Categorical Stats,partner,Most Frequent,No
+Categorical Stats,partner,Frequency of Most Frequent,3703
+Categorical Stats,partner,Category: No,3703
+Categorical Stats,partner,Category: Yes,3445
+,,,
+Categorical Stats,dependents,Unique Values,2
+Categorical Stats,dependents,Most Frequent,No
+Categorical Stats,dependents,Frequency of Most Frequent,5015
+Categorical Stats,dependents,Category: No,5015
+Categorical Stats,dependents,Category: Yes,2133
+,,,
+Categorical Stats,phone_service,Unique Values,2
+Categorical Stats,phone_service,Most Frequent,Yes
+Categorical Stats,phone_service,Frequency of Most Frequent,6453
+Categorical Stats,phone_service,Category: Yes,6453
+Categorical Stats,phone_service,Category: No,695
+,,,
+Categorical Stats,extra_lines,Unique Values,3
+Categorical Stats,extra_lines,Most Frequent,No
+Categorical Stats,extra_lines,Frequency of Most Frequent,3435
+Categorical Stats,extra_lines,Category: No,3435
+Categorical Stats,extra_lines,Category: Yes,3018
+Categorical Stats,extra_lines,Category: No phone service,695
+,,,
+Categorical Stats,internet_plan,Unique Values,9
+Categorical Stats,internet_plan,Most Frequent,Fiber optic
+Categorical Stats,internet_plan,Frequency of Most Frequent,3129
+Categorical Stats,internet_plan,Category: Fiber optic,3129
+Categorical Stats,internet_plan,Category: DSL,2469
+Categorical Stats,internet_plan,Category: No,1543
+Categorical Stats,internet_plan,Category: Fiber optiic,2
+Categorical Stats,internet_plan,Category: Fiber opttic,1
+,,,
+Categorical Stats,addon_security,Unique Values,3
+Categorical Stats,addon_security,Most Frequent,No
+Categorical Stats,addon_security,Frequency of Most Frequent,3556
+Categorical Stats,addon_security,Category: No,3556
+Categorical Stats,addon_security,Category: Yes,2049
+Categorical Stats,addon_security,Category: No internet service,1543
+,,,
+Categorical Stats,addon_backup,Unique Values,3
+Categorical Stats,addon_backup,Most Frequent,No
+Categorical Stats,addon_backup,Frequency of Most Frequent,3134
+Categorical Stats,addon_backup,Category: No,3134
+Categorical Stats,addon_backup,Category: Yes,2471
+Categorical Stats,addon_backup,Category: No internet service,1543
+,,,
+Categorical Stats,addon_device_protect,Unique Values,3
+Categorical Stats,addon_device_protect,Most Frequent,No
+Categorical Stats,addon_device_protect,Frequency of Most Frequent,3155
+Categorical Stats,addon_device_protect,Category: No,3155
+Categorical Stats,addon_device_protect,Category: Yes,2450
+Categorical Stats,addon_device_protect,Category: No internet service,1543
+,,,
+Categorical Stats,addon_techsupport,Unique Values,3
+Categorical Stats,addon_techsupport,Most Frequent,No
+Categorical Stats,addon_techsupport,Frequency of Most Frequent,3531
+Categorical Stats,addon_techsupport,Category: No,3531
+Categorical Stats,addon_techsupport,Category: Yes,2074
+Categorical Stats,addon_techsupport,Category: No internet service,1543
+,,,
+Categorical Stats,stream_tv,Unique Values,3
+Categorical Stats,stream_tv,Most Frequent,No
+Categorical Stats,stream_tv,Frequency of Most Frequent,2860
+Categorical Stats,stream_tv,Category: No,2860
+Categorical Stats,stream_tv,Category: Yes,2745
+Categorical Stats,stream_tv,Category: No internet service,1543
+,,,
+Categorical Stats,stream_movies,Unique Values,3
+Categorical Stats,stream_movies,Most Frequent,No
+Categorical Stats,stream_movies,Frequency of Most Frequent,2837
+Categorical Stats,stream_movies,Category: No,2837
+Categorical Stats,stream_movies,Category: Yes,2768
+Categorical Stats,stream_movies,Category: No internet service,1543
+,,,
+Categorical Stats,contract_type,Unique Values,3
+Categorical Stats,contract_type,Most Frequent,Month-to-month
+Categorical Stats,contract_type,Frequency of Most Frequent,3931
+Categorical Stats,contract_type,Category: Month-to-month,3931
+Categorical Stats,contract_type,Category: Two year,1718
+Categorical Stats,contract_type,Category: One year,1499
+,,,
+Categorical Stats,paperless_billing,Unique Values,2
+Categorical Stats,paperless_billing,Most Frequent,Yes
+Categorical Stats,paperless_billing,Frequency of Most Frequent,4231
+Categorical Stats,paperless_billing,Category: Yes,4231
+Categorical Stats,paperless_billing,Category: No,2917
+,,,
+Categorical Stats,payment_method,Unique Values,12
+Categorical Stats,payment_method,Most Frequent,Electronic check
+Categorical Stats,payment_method,Frequency of Most Frequent,2146
+Categorical Stats,payment_method,Category: Electronic check,2146
+Categorical Stats,payment_method,Category: Mailed check,1472
+Categorical Stats,payment_method,Category: Bank transfer (automatic),1423
+Categorical Stats,payment_method,Category: Credit card (automatic),1380
+Categorical Stats,payment_method,Category: mailed check,3
+,,,
+Categorical Stats,customer_hash,Unique Values,7043
+Categorical Stats,customer_hash,Most Frequent,d9b405ecce55
+Categorical Stats,customer_hash,Frequency of Most Frequent,2
+Categorical Stats,customer_hash,Category: d9b405ecce55,2
+Categorical Stats,customer_hash,Category: 96e12cad02dd,2
+Categorical Stats,customer_hash,Category: 7cd7adceb68b,2
+Categorical Stats,customer_hash,Category: 617a34b31a06,2
+Categorical Stats,customer_hash,Category: 67db383c0de0,2
+,,,
+Strong Correlations,Variable 1,Variable 2,Correlation
+Strong Correlations,months_with_provider,lifetime_spend,0.8000
+Strong Correlations,monthly_fee,lifetime_spend,0.5490
+,,,
+Churn Analysis,Overall Churn Rate,0.2658,26.58%
+Churn Analysis,Churned Customers,1900,
+Churn Analysis,Retained Customers,5248,
+,,,
+Churn by Feature,Feature,Category,Churn Rate
+Churn by Feature,seniorcitizen,0,0.2366 (23.66%)
+Churn by Feature,seniorcitizen,1,0.4171 (41.71%)
+Churn by Feature,internet_plan,DSL,0.1904 (19.04%)
+Churn by Feature,internet_plan,FFiber optic,0.0000 (0.00%)
+Churn by Feature,internet_plan,Fibe optic,1.0000 (100.00%)
+Churn by Feature,internet_plan,Fiber optic,0.4196 (41.96%)
+Churn by Feature,internet_plan,Fiber optiic,0.5000 (50.00%)
+Churn by Feature,internet_plan,Fiber opttic,0.0000 (0.00%)
+Churn by Feature,internet_plan,Fiiber optic,0.0000 (0.00%)
+Churn by Feature,internet_plan,No,0.0745 (7.45%)
+Churn by Feature,internet_plan,iFber optic,0.0000 (0.00%)
+Churn by Feature,contract_type,Month-to-month,0.4286 (42.86%)
+Churn by Feature,contract_type,One year,0.1107 (11.07%)
+Churn by Feature,contract_type,Two year,0.0285 (2.85%)
+Churn by Feature,payment_method,BANK TRANSFER (AUTOMATIC),0.0000 (0.00%)
+Churn by Feature,payment_method,Bank transfer (automatic),0.1673 (16.73%)
+Churn by Feature,payment_method,Credit card (automatic),0.1500 (15.00%)
+Churn by Feature,payment_method,ELECTRONIC CHECK,0.0000 (0.00%)
+Churn by Feature,payment_method,Electronic check,0.4492 (44.92%)
+Churn by Feature,payment_method,MAILED CHECK,1.0000 (100.00%)
+Churn by Feature,payment_method,Mailed check,0.1902 (19.02%)
+Churn by Feature,payment_method,NAN,0.0000 (0.00%)
+Churn by Feature,payment_method,bank transfer (automatic),1.0000 (100.00%)
+Churn by Feature,payment_method,credit card (automatic),0.0000 (0.00%)
+Churn by Feature,payment_method,electronic check,0.3333 (33.33%)
+Churn by Feature,payment_method,mailed check,0.3333 (33.33%)

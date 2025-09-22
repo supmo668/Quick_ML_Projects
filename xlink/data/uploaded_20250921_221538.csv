@@ -1,0 +1,4 @@
+account_id,gender,churned
+ACC001,Male,0
+ACC002,Female,1
+ACC003,Male,0
