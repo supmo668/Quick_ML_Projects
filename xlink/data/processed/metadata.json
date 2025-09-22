@@ -1049,7 +1049,64 @@
         "churned"
       ],
       "path": "data/processed/processed_v_20250922_005202_412652fb.pkl"
+    },
+    "v_20250922_092436_412652fb": {
+      "timestamp": "20250922_092436",
+      "hash": "412652fb",
+      "shape": [
+        7148,
+        46
+      ],
+      "columns": [
+        "gender",
+        "seniorcitizen",
+        "partner",
+        "dependents",
+        "months_with_provider",
+        "phone_service",
+        "contract_type",
+        "paperless_billing",
+        "monthly_fee",
+        "high_risk_payment",
+        "is_multi_service",
+        "high_value_customer",
+        "senior_with_dependents",
+        "internet_plan_DSL",
+        "internet_plan_Fiber optic",
+        "internet_plan_No",
+        "extra_lines_No",
+        "extra_lines_No phone service",
+        "extra_lines_Yes",
+        "payment_method_bank_transfer",
+        "payment_method_credit_card",
+        "payment_method_electronic_check",
+        "payment_method_mailed_check",
+        "addon_security_No",
+        "addon_security_No internet service",
+        "addon_security_Yes",
+        "addon_backup_No",
+        "addon_backup_No internet service",
+        "addon_backup_Yes",
+        "addon_device_protect_No",
+        "addon_device_protect_No internet service",
+        "addon_device_protect_Yes",
+        "addon_techsupport_No",
+        "addon_techsupport_No internet service",
+        "addon_techsupport_Yes",
+        "stream_tv_No",
+        "stream_tv_No internet service",
+        "stream_tv_Yes",
+        "stream_movies_No",
+        "stream_movies_No internet service",
+        "stream_movies_Yes",
+        "tenure_group_0-12",
+        "tenure_group_13-24",
+        "tenure_group_25-48",
+        "tenure_group_49+",
+        "churned"
+      ],
+      "path": "data/processed/processed_v_20250922_092436_412652fb.pkl"
     }
   },
-  "latest": "v_20250922_005202_412652fb"
+  "latest": "v_20250922_092436_412652fb"
 }
