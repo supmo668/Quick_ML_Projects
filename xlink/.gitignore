@@ -1,6 +1,7 @@
 # TASK.md
+
 models/
 *.csv
-
+*.pkl
 Instructions.pdf
 .env
